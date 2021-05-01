@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta>
+   <title>Vans Landing Page</title>
+   <link rel ="stylesheet" href="style.css">
+</head> 
+<body>
+   <section class = "sec">
+   <header>
+   <a href="#"><img src="vans.png" width=150px class"logo"></a>
+   <ul>
+       <li><a href = "#">Home</a></li>
+       <li><a href = "#">Products</a></li>
+       <li><a href = "#">What's New</a></li>
+       <li><a href = "#">Newsletter</a></li>
+       <li><a href = "#">Contact</a></li>
+   </ul>
+   </header>
+   <div class="content">
+       <div class="textBox">
+           <h2>"OFF THE<br><span>WALL"</span></br></h2>
+           <p>Lorem ipsum dolor sit amet, at nam solet consulatu, mei case maluisset ex. Melius impedit perfecto in est. Ad pro soleat accusam posidonium, scaevola invidunt cum ad. Ipsum congue aliquam id eam, modus antiopam persecuti cu quo. At doming delectus mea, similique deterruisset ex eos.</p>
+           <a href="#">View All Products</a>
+       </div>
+       <div class="imgBox">
+           <img src="vans-old-skool.png" class="vans">
+       </div>
+   </div>
+   <ul class="thumb">
+       <li><img src="vans-old-skool.png" onclick="imgSlider('vans-old-skool.png');changeBgcolor('#000')"></li>
+       <li><img src="vans1.png" onclick="imgSlider('vans1.png');changeBgcolor('#512b33')"></li>
+       <li><img src="vans2.png" onclick="imgSlider('vans2.png');changeBgcolor('#8e9294')"></li>
+   </ul>
+   <ul class="sci">
+   <li><a href="https://www.facebook.com/vansphmanila/" target="_blank"><img src="facebook.png"></a></li>
+   <li><a href="https://twitter.com/VANS_66" target="_blank"><img src="twitter.png"></a></li>
+   <li><a href="https://www.instagram.com/vans/" target="_blank"><img src="instagram.png"></a></li>
+   </section>
+   <script type="text/javascript">
+       function imgSlider(anything){
+           document.querySelector('.vans').src = anything; 
+       }
+       function changeBgcolor(color){
+           const sec = document.querySelector('.sec');
+           sec.style.background = color;
+       }
+   </script>
+</body>
+</html>
